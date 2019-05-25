@@ -272,3 +272,511 @@ Migrating to CreateArticles (20190525130633)
   [1m[36mArticle Update (0.9ms)[0m  [1m[33mUPDATE "articles" SET "title" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "This is an editted article title"], ["updated_at", "2019-05-25 15:17:07.814894"], ["id", 2]]
   [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2019-05-25 11:34:04 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.6ms | Allocations: 450)
+Completed 200 OK in 1666ms (Views: 1614.8ms | ActiveRecord: 0.0ms | Allocations: 1540476)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /Users/LiseWNoble/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273)
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 11:37:47 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant ArticlesController
+Did you mean?  AbstractController):
+  
+activesupport (6.0.0.rc1) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.0.rc1) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.0.rc1) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.0.rc1) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.0.rc1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.0.rc1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.0.rc1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.0.rc1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.0.rc1) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.0.rc1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.0.rc1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0.rc1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0.rc1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0.rc1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/cookies.rb:644:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activerecord (6.0.0.rc1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 11:40:12 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 84)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 5730)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 11:42:45 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 182.1ms | Allocations: 76099)
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 1.0ms | Allocations: 81260)
+
+
+  
+ActionView::Template::Error (undefined method `for_for' for #<#<Class:0x00007fbf9a4db5f0>:0x00007fbf9a4d94f8>
+Did you mean?  form_for):
+    1: <h1>Create an article</h1>
+    2: 
+    3: <%= for_for @articles do |f| %>
+    4: <% end %>
+  
+app/views/articles/new.html.erb:3
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 11:43:56 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1664)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2832)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Create an article</h1>
+    2: 
+    3: <%= form_for @articles do |f| %>
+    4: <% end %>
+  
+app/views/articles/new.html.erb:3
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 11:44:58 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 375)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 6177)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 11:49:31 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 177.2ms | Allocations: 80841)
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 0.0ms | Allocations: 82017)
+
+
+  
+ActionView::Template::Error (undefined method `lable' for #<ActionView::Helpers::FormBuilder:0x00007fbfa201a5e0>
+Did you mean?  label):
+     6:     <%= f.text_field :title %>
+     7:   </p>
+     8:   <p>
+     9:     <%= f.lable :description %><br/>
+    10:     <%= f.text_area :description %>
+    11:   </p>
+    12: <% end %>
+  
+app/views/articles/new.html.erb:9
+app/views/articles/new.html.erb:3
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 11:49:55 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 160.8ms | Allocations: 74912)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.0ms | Allocations: 75343)
+
+
+  
+ActionView::Template::Error (undefined method `lable' for #<ActionView::Helpers::FormBuilder:0x00007fbfa289a3c8>
+Did you mean?  label):
+     6:     <%= f.text_field :title %>
+     7:   </p>
+     8:   <p>
+     9:     <%= f.lable :description %><br/>
+    10:     <%= f.text_area :description %>
+    11:   </p>
+    12: <% end %>
+  
+app/views/articles/new.html.erb:9
+app/views/articles/new.html.erb:3
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 11:51:23 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3315)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 8909)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 11:51:55 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 948)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 6735)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 11:53:39 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 707)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 5566)
+
+
+Started POST "/articles" for 127.0.0.1 at 2019-05-25 11:53:42 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ArticlesController):
+  
+actionpack (6.0.0.rc1) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.0.rc1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0.rc1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0.rc1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0.rc1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0.rc1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0.rc1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0.rc1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0.rc1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0.rc1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/cookies.rb:644:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activerecord (6.0.0.rc1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+web-console (4.0.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0.rc1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+activesupport (6.0.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/static.rb:126:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:57:in `block in call'
+activesupport (6.0.0.rc1) lib/active_support/notifications.rb:182:in `instrument'
+actionpack (6.0.0.rc1) lib/action_dispatch/middleware/stack.rb:56:in `call'
+railties (6.0.0.rc1) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/articles" for 127.0.0.1 at 2019-05-25 11:53:54 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"IjvqsdbdEk9NSrz6M9nLAjkTAAOTz7z1nwR521SdkMWVKIeUTuYFNDMCQxExaavEA3Q3jJ48DKOj9pfBzUj31A==", "article"=>{"title"=>"", "description"=>""}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 757)
+
+
+Started POST "/articles" for 127.0.0.1 at 2019-05-25 11:56:26 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"IjvqsdbdEk9NSrz6M9nLAjkTAAOTz7z1nwR521SdkMWVKIeUTuYFNDMCQxExaavEA3Q3jJ48DKOj9pfBzUj31A==", "article"=>{"title"=>"This is now", "description"=>"This is a new article description"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 500 Internal Server Error in 324ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 99899)
+
+
+  
+NameError (undefined local variable or method `article_params' for #<ArticlesController:0x00007fbf9af80118>
+Did you mean?  articles_params
+               article_path):
+  
+app/controllers/articles_controller.rb:8:in `create'
+Started POST "/articles" for 127.0.0.1 at 2019-05-25 11:57:16 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"IjvqsdbdEk9NSrz6M9nLAjkTAAOTz7z1nwR521SdkMWVKIeUTuYFNDMCQxExaavEA3Q3jJ48DKOj9pfBzUj31A==", "article"=>{"title"=>"This is now", "description"=>"This is a new article description"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mArticle Create (1.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "This is now"], ["description", "This is a new article description"], ["created_at", "2019-05-25 15:57:16.413643"], ["updated_at", "2019-05-25 15:57:16.413643"]]
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 2.3ms | Allocations: 6771)
+
+
+Started POST "/articles" for 127.0.0.1 at 2019-05-25 11:59:05 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"IjvqsdbdEk9NSrz6M9nLAjkTAAOTz7z1nwR521SdkMWVKIeUTuYFNDMCQxExaavEA3Q3jJ48DKOj9pfBzUj31A==", "article"=>{"title"=>"This is now", "description"=>"This is a new article description"}, "commit"=>"Create Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:8:in `create'
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "This is now"], ["description", "This is a new article description"], ["created_at", "2019-05-25 15:59:05.348804"], ["updated_at", "2019-05-25 15:59:05.348804"]]
+  ↳ app/controllers/articles_controller.rb:8:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:8:in `create'
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 10ms (ActiveRecord: 1.6ms | Allocations: 7681)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 11:59:15 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 760)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 5770)
+
+
+Started POST "/articles" for 127.0.0.1 at 2019-05-25 11:59:23 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"kDTHsfoORpSPBU6Vo+fbpqZ7iGx6KnyaAkmRaS6O6ZonJ6qUYjVR7/FNsX6hV7tgnBy/43fZzMw+u39zt1uOiw==", "article"=>{"title"=>"new title", "description"=>"this is a test"}, "commit"=>"Create Article"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:8:in `create'
+  [1m[36mArticle Create (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "new title"], ["description", "this is a test"], ["created_at", "2019-05-25 15:59:23.566851"], ["updated_at", "2019-05-25 15:59:23.566851"]]
+  ↳ app/controllers/articles_controller.rb:8:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:8:in `create'
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 4ms (ActiveRecord: 1.1ms | Allocations: 2651)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 12:44:04 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 700)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 5564)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-25 12:44:06 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 700)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 5560)
+
+
+Started POST "/articles" for 127.0.0.1 at 2019-05-25 12:44:18 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"A9nNb8tBu9EkB+TurFHqQeBHdgskVc6AMd1ecjHs9km0yqBKU3qsqlpPGwWu4YqH2iBBhCmmftYNL7BoqDmRWA==", "article"=>{"title"=>"New Title", "description"=>"Now this a a brand new article"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:8:in `create'
+  [1m[36mArticle Create (0.7ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "New Title"], ["description", "Now this a a brand new article"], ["created_at", "2019-05-25 16:44:19.001077"], ["updated_at", "2019-05-25 16:44:19.001077"]]
+  ↳ app/controllers/articles_controller.rb:8:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:8:in `create'
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 5ms (ActiveRecord: 1.5ms | Allocations: 2689)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" LIMIT ?[0m  [["LIMIT", 11]]
