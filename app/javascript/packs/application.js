@@ -5,6 +5,7 @@
 
 
 require("@rails/ujs").start()
+//= require jquery
 //= require bootstrap-sprockets
 require("turbolinks").start()
 require("@rails/activestorage").start()
