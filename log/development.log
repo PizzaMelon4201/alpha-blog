@@ -4229,3 +4229,39 @@ Entrypoint application = js/application-099382070574c655453c.js js/application-0
 Completed 200 OK in 7518ms (Views: 7508.6ms | ActiveRecord: 0.0ms | Allocations: 3874890)
 
 
+Started GET "/" for 127.0.0.1 at 2019-05-27 12:38:21 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 76)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 14335)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 12:38:24 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 70)
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 17)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 14279)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 12:38:39 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 70)
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 17)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 14288)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 12:38:41 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 70)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 17)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 14290)
+
+
