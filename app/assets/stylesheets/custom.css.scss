@@ -6,4 +6,22 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
+  color: #000;
+}
+
+.jumbotron {
+  background-image: asset_url('blog.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  border-radius: 0;
+}
+
+.footer {
+  background: #000;
+  margin-top: 200px;
+  height: 200px;
+  padding: 0 80px;
+  color: #fff;
 }
