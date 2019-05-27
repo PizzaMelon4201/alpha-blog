@@ -3579,3 +3579,653 @@ Entrypoint application = js/application-b725165032fc2d01dfb6.js js/application-b
 Completed 200 OK in 4577ms (Views: 4566.1ms | ActiveRecord: 0.0ms | Allocations: 1676141)
 
 
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:03:54 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.9ms | Allocations: 570)
+  Rendered layouts/_navigation.html.erb (Duration: 1.4ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 1.0ms | Allocations: 147)
+Completed 200 OK in 1714ms (Views: 1704.7ms | ActiveRecord: 0.0ms | Allocations: 1674820)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:05:15 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 76)
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 17)
+Completed 200 OK in 2055ms (Views: 2054.2ms | ActiveRecord: 0.0ms | Allocations: 1511319)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:07:04 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 405)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+Hash: 55ced3ecec73c940154e
+Version: webpack 4.31.0
+Time: 621ms
+Built at: 05/27/2019 10:07:09 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-34795806c245e67212c3.js   6.35 KiB  application  [emitted]  application
+js/application-34795806c245e67212c3.js.map   3.53 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-34795806c245e67212c3.js js/application-34795806c245e67212c3.js.map
+[./app/javascript/packs/application.js] 2.46 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs/application.js: Unexpected token, expected ";" (6:8)
+
+  4 | // that code so it'll be compiled.
+  5 | 
+> 6 | require jquery
+    |         ^
+  7 | require("@rails/ujs").start()
+  8 | //= require bootstrap-sprockets
+  9 | require("turbolinks").start()
+    at Parser.raise (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:6322:17)
+    at Parser.unexpected (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:7638:16)
+    at Parser.semicolon (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:7620:40)
+    at Parser.parseExpressionStatement (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:10299:10)
+    at Parser.parseStatementContent (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:9897:19)
+    at Parser.parseStatement (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:9763:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:10340:25)
+    at Parser.parseBlockBody (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:10327:10)
+    at Parser.parseTopLevel (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:9692:10)
+    at Parser.parse (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:11209:17)
+    at parse (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:11245:38)
+    at parser (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transformation/normalize-file.js:170:34)
+    at normalizeFile (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transformation/normalize-file.js:138:11)
+    at runSync (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transformation/index.js:44:43)
+    at runAsync (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transformation/index.js:35:14)
+    at process.nextTick (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transform.js:34:34)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 147)
+Completed 200 OK in 4302ms (Views: 4293.5ms | ActiveRecord: 0.0ms | Allocations: 1682765)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:07:35 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 422)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+Hash: 41dcbe3fe1dd152705cf
+Version: webpack 4.31.0
+Time: 360ms
+Built at: 05/27/2019 10:07:38 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-cd4e4f6edb1aff3bf19c.js   6.35 KiB  application  [emitted]  application
+js/application-cd4e4f6edb1aff3bf19c.js.map   3.53 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-cd4e4f6edb1aff3bf19c.js js/application-cd4e4f6edb1aff3bf19c.js.map
+[./app/javascript/packs/application.js] 2.45 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs/application.js: Unexpected token, expected ";" (6:8)
+
+  4 | // that code so it'll be compiled.
+  5 | 
+> 6 | require jquery
+    |         ^
+  7 | require("@rails/ujs").start()
+  8 | require bootstrap-sprockets
+  9 | require("turbolinks").start()
+    at Parser.raise (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:6322:17)
+    at Parser.unexpected (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:7638:16)
+    at Parser.semicolon (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:7620:40)
+    at Parser.parseExpressionStatement (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:10299:10)
+    at Parser.parseStatementContent (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:9897:19)
+    at Parser.parseStatement (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:9763:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:10340:25)
+    at Parser.parseBlockBody (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:10327:10)
+    at Parser.parseTopLevel (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:9692:10)
+    at Parser.parse (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:11209:17)
+    at parse (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:11245:38)
+    at parser (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transformation/normalize-file.js:170:34)
+    at normalizeFile (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transformation/normalize-file.js:138:11)
+    at runSync (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transformation/index.js:44:43)
+    at runAsync (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transformation/index.js:35:14)
+    at process.nextTick (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transform.js:34:34)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 147)
+Completed 200 OK in 3516ms (Views: 3507.1ms | ActiveRecord: 0.0ms | Allocations: 1675735)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:19:44 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.0ms | Allocations: 786)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+Hash: b96b619bcc6ce9d02839
+Version: webpack 4.31.0
+Time: 622ms
+Built at: 05/27/2019 10:19:48 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-a95e3523b2a0d34cc5e2.js   6.37 KiB  application  [emitted]  application
+js/application-a95e3523b2a0d34cc5e2.js.map   3.53 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-a95e3523b2a0d34cc5e2.js js/application-a95e3523b2a0d34cc5e2.js.map
+[./app/javascript/packs/application.js] 2.47 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs/application.js: Unexpected token, expected ";" (6:8)
+
+  4 | // that code so it'll be compiled.
+  5 | 
+> 6 | require jquery.start()
+    |         ^
+  7 | require("@rails/ujs").start()
+  8 | require bootstrap-sprockets.start()
+  9 | require("turbolinks").start()
+    at Parser.raise (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:6322:17)
+    at Parser.unexpected (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:7638:16)
+    at Parser.semicolon (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:7620:40)
+    at Parser.parseExpressionStatement (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:10299:10)
+    at Parser.parseStatementContent (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:9897:19)
+    at Parser.parseStatement (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:9763:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:10340:25)
+    at Parser.parseBlockBody (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:10327:10)
+    at Parser.parseTopLevel (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:9692:10)
+    at Parser.parse (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:11209:17)
+    at parse (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/parser/lib/index.js:11245:38)
+    at parser (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transformation/normalize-file.js:170:34)
+    at normalizeFile (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transformation/normalize-file.js:138:11)
+    at runSync (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transformation/index.js:44:43)
+    at runAsync (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transformation/index.js:35:14)
+    at process.nextTick (/Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules/@babel/core/lib/transform.js:34:34)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+
+  Rendered layouts/_navigation.html.erb (Duration: 1.1ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 1.0ms | Allocations: 147)
+Completed 200 OK in 4422ms (Views: 4411.4ms | ActiveRecord: 0.0ms | Allocations: 1675738)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:21:39 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 394)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+Hash: 94fea8b1b598d997eca2
+Version: webpack 4.31.0
+Time: 724ms
+Built at: 05/27/2019 10:21:43 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-308e5908da0fdeb87be8.js    124 KiB  application  [emitted]  application
+js/application-308e5908da0fdeb87be8.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-308e5908da0fdeb87be8.js js/application-308e5908da0fdeb87be8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 816 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 9:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 5:0-17
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.6ms | Allocations: 147)
+Completed 200 OK in 3889ms (Views: 3881.9ms | ActiveRecord: 0.0ms | Allocations: 1675544)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:23:55 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 397)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+Hash: ac22345685fe659bb80c
+Version: webpack 4.31.0
+Time: 634ms
+Built at: 05/27/2019 10:23:59 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-0024151bb102c32c3936.js    124 KiB  application  [emitted]  application
+js/application-0024151bb102c32c3936.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-0024151bb102c32c3936.js js/application-0024151bb102c32c3936.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 818 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 9:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 5:0-17
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 147)
+Completed 200 OK in 3835ms (Views: 3827.5ms | ActiveRecord: 0.0ms | Allocations: 1675663)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:24:37 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 397)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+Hash: abe159d4c95cdf2c0631
+Version: webpack 4.31.0
+Time: 642ms
+Built at: 05/27/2019 10:24:41 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-679d546870dd521a3ae1.js   94.7 KiB  application  [emitted]  application
+js/application-679d546870dd521a3ae1.js.map    106 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-679d546870dd521a3ae1.js js/application-679d546870dd521a3ae1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 797 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 2 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 5:0-17
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 147)
+Completed 200 OK in 3851ms (Views: 3843.1ms | ActiveRecord: 0.0ms | Allocations: 1675684)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:25:39 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 395)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+Hash: 9acc9d355bfc4b84b263
+Version: webpack 4.31.0
+Time: 654ms
+Built at: 05/27/2019 10:25:43 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-d440b460a7ace5c5747d.js    124 KiB  application  [emitted]  application
+js/application-d440b460a7ace5c5747d.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-d440b460a7ace5c5747d.js js/application-d440b460a7ace5c5747d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 801 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.8ms | Allocations: 147)
+Completed 200 OK in 3999ms (Views: 3991.5ms | ActiveRecord: 0.0ms | Allocations: 1676702)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:27:04 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 76)
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 14090)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:36:49 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.7ms | Allocations: 592)
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.8ms | Allocations: 147)
+Completed 200 OK in 2999ms (Views: 2988.4ms | ActiveRecord: 0.0ms | Allocations: 2983289)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:40:19 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 76)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 14313)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:40:31 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.7ms | Allocations: 880)
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.8ms | Allocations: 147)
+Completed 200 OK in 2174ms (Views: 2164.7ms | ActiveRecord: 0.0ms | Allocations: 1721917)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:41:27 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 76)
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 17)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 14549)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:49:54 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 8.5ms | Allocations: 570)
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.8ms | Allocations: 147)
+Completed 200 OK in 1589ms (Views: 1579.0ms | ActiveRecord: 0.0ms | Allocations: 1691617)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:50:00 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 76)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 14578)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 10:50:01 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 70)
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 17)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 14525)
+
+
+Started GET "/articles" for 127.0.0.1 at 2019-05-27 10:50:03 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:14
+  Rendered articles/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 5421)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 39ms (Views: 32.5ms | ActiveRecord: 1.4ms | Allocations: 20794)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-27 10:50:04 -0400
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 13.8ms | Allocations: 2718)
+  Rendered articles/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 3018)
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 17)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms | Allocations: 17650)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-27 11:22:57 -0400
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 27.7ms | Allocations: 2756)
+  Rendered articles/new.html.erb within layouts/application (Duration: 33.9ms | Allocations: 3174)
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 125)
+  Rendered layouts/_messages.html.erb (Duration: 0.9ms | Allocations: 147)
+Completed 200 OK in 1955ms (Views: 1934.4ms | ActiveRecord: 1.2ms | Allocations: 1713125)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2019-05-27 11:29:00 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 1.6ms | Allocations: 734)
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 798)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.0ms | Allocations: 19860)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 11:29:58 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.4ms | Allocations: 714)
+  Rendered layouts/_navigation.html.erb (Duration: 1.6ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 1.1ms | Allocations: 147)
+Completed 200 OK in 1562ms (Views: 1552.3ms | ActiveRecord: 0.0ms | Allocations: 1685390)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 11:48:56 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.2ms | Allocations: 642)
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.9ms | Allocations: 147)
+Completed 200 OK in 1680ms (Views: 1671.5ms | ActiveRecord: 0.0ms | Allocations: 1674877)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 11:54:11 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 397)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+Hash: 6772b7376b58f5b038ce
+Version: webpack 4.31.0
+Time: 884ms
+Built at: 05/27/2019 11:54:15 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-2a3408cb868832e80ded.js    124 KiB  application  [emitted]  application
+js/application-2a3408cb868832e80ded.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-2a3408cb868832e80ded.js js/application-2a3408cb868832e80ded.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 824 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 147)
+Completed 200 OK in 4497ms (Views: 4489.6ms | ActiveRecord: 0.0ms | Allocations: 1679864)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 11:55:34 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 469)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+Hash: 971a6f114343756feffd
+Version: webpack 4.31.0
+Time: 623ms
+Built at: 05/27/2019 11:55:38 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-feefac2190225a71882d.js    124 KiB  application  [emitted]  application
+js/application-feefac2190225a71882d.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-feefac2190225a71882d.js js/application-feefac2190225a71882d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 824 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 147)
+Completed 200 OK in 3788ms (Views: 3781.0ms | ActiveRecord: 0.0ms | Allocations: 1677327)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 12:27:05 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 5.3ms | Allocations: 507)
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.9ms | Allocations: 147)
+Completed 200 OK in 1795ms (Views: 1785.5ms | ActiveRecord: 0.0ms | Allocations: 1711155)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 12:37:17 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.2ms | Allocations: 642)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+Hash: 80eb011d1d1c2c8936df
+Version: webpack 4.31.0
+Time: 877ms
+Built at: 05/27/2019 12:37:25 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-099382070574c655453c.js    124 KiB  application  [emitted]  application
+js/application-099382070574c655453c.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-099382070574c655453c.js js/application-099382070574c655453c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 782 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layouts/_navigation.html.erb (Duration: 1.2ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.9ms | Allocations: 147)
+Completed 200 OK in 7518ms (Views: 7508.6ms | ActiveRecord: 0.0ms | Allocations: 3874890)
+
+
