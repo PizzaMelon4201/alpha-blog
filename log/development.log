@@ -2502,3 +2502,1080 @@ Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/Rubymi
 Completed 200 OK in 1937ms (Views: 1934.9ms | ActiveRecord: 0.2ms | Allocations: 14893)
 
 
+Started GET "/articles/2" for 127.0.0.1 at 2019-05-26 13:01:49 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:50:in `set_article'
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 82)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 515ms
+Built at: 05/26/2019 1:01:51 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 1947ms (Views: 1943.6ms | ActiveRecord: 0.4ms | Allocations: 14926)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2019-05-26 13:01:54 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:50:in `set_article'
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 81)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 507ms
+Built at: 05/26/2019 1:01:56 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 17)
+Completed 200 OK in 1914ms (Views: 1912.2ms | ActiveRecord: 0.1ms | Allocations: 14888)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2019-05-26 13:12:18 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:50:in `set_article'
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 82)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 813ms
+Built at: 05/26/2019 1:12:21 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 3219ms (Views: 3216.0ms | ActiveRecord: 0.4ms | Allocations: 14911)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2019-05-26 13:12:36 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:50:in `set_article'
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 81)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 527ms
+Built at: 05/26/2019 1:12:38 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 1923ms (Views: 1919.8ms | ActiveRecord: 0.3ms | Allocations: 14888)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2019-05-26 13:14:22 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:50:in `set_article'
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 81)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 870ms
+Built at: 05/26/2019 1:14:25 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 17)
+Completed 200 OK in 3075ms (Views: 3073.8ms | ActiveRecord: 0.1ms | Allocations: 14892)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-26 13:14:28 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 196)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 506ms
+Built at: 05/26/2019 1:14:30 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 1873ms (Views: 1871.7ms | ActiveRecord: 0.0ms | Allocations: 14875)
+
+
+Started GET "/articles" for 127.0.0.1 at 2019-05-26 13:14:34 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2004)
+[Webpacker] Compiling…
+Started GET "/about" for 127.0.0.1 at 2019-05-26 13:14:34 -0400
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 1.7ms | Allocations: 150)
+[Webpacker] Compiling…
+Started GET "/articles" for 127.0.0.1 at 2019-05-26 13:14:35 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1750)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 664ms
+Built at: 05/26/2019 1:14:36 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 17)
+Completed 200 OK in 2589ms (Views: 2587.6ms | ActiveRecord: 0.2ms | Allocations: 48832)
+
+
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 806ms
+Built at: 05/26/2019 1:14:37 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 17)
+Completed 200 OK in 2753ms (Views: 2751.0ms | ActiveRecord: 0.0ms | Allocations: 33372)
+
+
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 466ms
+Built at: 05/26/2019 1:14:38 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.0ms | Allocations: 17)
+Completed 200 OK in 2283ms (Views: 2280.3ms | ActiveRecord: 1.1ms | Allocations: 18460)
+
+
+Started GET "/articles" for 127.0.0.1 at 2019-05-26 13:18:49 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1699)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.1ms | Allocations: 23541)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: C:/Ruby193/lib/ruby/gems/1.9.1/gems/bootstrap-sass-2.0.3.1/vendor/assets/stylesheets/bootstrap/_variables.scss.
+Load paths:
+  /Users/LiseWNoble/RubymineProjects/alpha-blog/app/assets/config
+  /Users/LiseWNoble/RubymineProjects/alpha-blog/app/assets/images
+  /Users/LiseWNoble/RubymineProjects/alpha-blog/app/assets/stylesheets
+  /Users/LiseWNoble/.rvm/gems/ruby-2.6.3/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /Users/LiseWNoble/.rvm/gems/ruby-2.6.3/gems/actioncable-6.0.0.rc1/app/assets/javascripts
+  /Users/LiseWNoble/.rvm/gems/ruby-2.6.3/gems/activestorage-6.0.0.rc1/app/assets/javascripts
+  /Users/LiseWNoble/.rvm/gems/ruby-2.6.3/gems/actionview-6.0.0.rc1/lib/assets/compiled
+  /Users/LiseWNoble/.rvm/gems/ruby-2.6.3/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/LiseWNoble/RubymineProjects/alpha-blog/node_modules
+  /Users/LiseWNoble/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /Users/LiseWNoble/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /Users/LiseWNoble/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/fonts
+  /Users/LiseWNoble/.rvm/gems/ruby-2.6.3/gems/bootstrap-sass-3.4.1/assets/images):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/custom.css.scss:2
+app/views/layouts/application.html.erb:8
+Started GET "/articles" for 127.0.0.1 at 2019-05-26 13:19:03 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1716)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 944ms
+Built at: 05/26/2019 1:19:07 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 4158ms (Views: 4157.1ms | ActiveRecord: 0.1ms | Allocations: 16083)
+
+
+Started GET "/articles" for 127.0.0.1 at 2019-05-26 13:19:10 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1698)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 604ms
+Built at: 05/26/2019 1:19:13 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 2218ms (Views: 2216.9ms | ActiveRecord: 0.2ms | Allocations: 15935)
+
+
+Started GET "/articles" for 127.0.0.1 at 2019-05-26 13:20:09 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1698)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 1019ms
+Built at: 05/26/2019 1:20:12 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 17)
+Completed 200 OK in 3602ms (Views: 3601.1ms | ActiveRecord: 0.1ms | Allocations: 15935)
+
+
+Started GET "/articles" for 127.0.0.1 at 2019-05-26 13:20:14 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1698)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 627ms
+Built at: 05/26/2019 1:20:16 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 2299ms (Views: 2297.8ms | ActiveRecord: 0.2ms | Allocations: 15937)
+
+
+Started GET "/articles" for 127.0.0.1 at 2019-05-26 13:26:14 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1740)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 831ms
+Built at: 05/26/2019 1:26:17 PM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 3427ms (Views: 3426.0ms | ActiveRecord: 0.5ms | Allocations: 16001)
+
+
+Started GET "/articles" for 127.0.0.1 at 2019-05-27 08:43:06 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 1740)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 880ms
+Built at: 05/27/2019 8:43:10 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 4288ms (Views: 4278.2ms | ActiveRecord: 0.5ms | Allocations: 16010)
+
+
+Started GET "/articles" for 127.0.0.1 at 2019-05-27 08:53:03 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 25.1ms | Allocations: 6006)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 873ms
+Built at: 05/27/2019 8:53:08 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 1.0ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.8ms | Allocations: 147)
+Completed 200 OK in 4609ms (Views: 4589.6ms | ActiveRecord: 3.1ms | Allocations: 1571530)
+
+
+Started GET "/articles" for 127.0.0.1 at 2019-05-27 08:53:10 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:13
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1756)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 633ms
+Built at: 05/27/2019 8:53:12 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 17)
+Completed 200 OK in 2379ms (Views: 2377.2ms | ActiveRecord: 0.2ms | Allocations: 16011)
+
+
+Started GET "/articles" for 127.0.0.1 at 2019-05-27 08:56:32 -0400
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:20
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1966)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 1345ms
+Built at: 05/27/2019 8:56:37 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 1.9ms | Allocations: 116)
+  Rendered layouts/_messages.html.erb (Duration: 1.6ms | Allocations: 139)
+Completed 200 OK in 4997ms (Views: 4995.1ms | ActiveRecord: 0.2ms | Allocations: 17697)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 08:56:40 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 192)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 884ms
+Built at: 05/27/2019 8:56:43 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 17)
+Completed 200 OK in 3068ms (Views: 3066.7ms | ActiveRecord: 0.0ms | Allocations: 14895)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 08:57:07 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 70)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: 8dbf43e5f2aba9467b8c
+Version: webpack 4.31.0
+Time: 587ms
+Built at: 05/27/2019 8:57:09 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-ad0d04f6d767e31d06df.js    124 KiB  application  [emitted]  application
+js/application-ad0d04f6d767e31d06df.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-ad0d04f6d767e31d06df.js js/application-ad0d04f6d767e31d06df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 826 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery_ujs' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-21
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 2266ms (Views: 2264.6ms | ActiveRecord: 0.0ms | Allocations: 14310)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 09:22:37 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.8ms | Allocations: 189)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: f5b1fa87e0abc421dc5a
+Version: webpack 4.31.0
+Time: 1014ms
+Built at: 05/27/2019 9:22:41 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-b502a96f5e62d83f6f10.js    124 KiB  application  [emitted]  application
+js/application-b502a96f5e62d83f6f10.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-b502a96f5e62d83f6f10.js js/application-b502a96f5e62d83f6f10.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+  Rendered layouts/_navigation.html.erb (Duration: 1.9ms | Allocations: 116)
+  Rendered layouts/_messages.html.erb (Duration: 2.2ms | Allocations: 139)
+Completed 200 OK in 3497ms (Views: 3487.2ms | ActiveRecord: 0.0ms | Allocations: 15898)
+
+
+Started GET "/articles" for 127.0.0.1 at 2019-05-27 09:42:43 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:14
+  Rendered articles/index.html.erb within layouts/application (Duration: 28.0ms | Allocations: 5546)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: f5b1fa87e0abc421dc5a
+Version: webpack 4.31.0
+Time: 820ms
+Built at: 05/27/2019 9:42:48 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-b502a96f5e62d83f6f10.js    124 KiB  application  [emitted]  application
+js/application-b502a96f5e62d83f6f10.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-b502a96f5e62d83f6f10.js js/application-b502a96f5e62d83f6f10.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+  Rendered layouts/_navigation.html.erb (Duration: 1.1ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 1.6ms | Allocations: 147)
+Completed 200 OK in 4878ms (Views: 4858.9ms | ActiveRecord: 3.1ms | Allocations: 1680496)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 09:42:50 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 192)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+Hash: f5b1fa87e0abc421dc5a
+Version: webpack 4.31.0
+Time: 610ms
+Built at: 05/27/2019 9:42:52 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-b502a96f5e62d83f6f10.js    124 KiB  application  [emitted]  application
+js/application-b502a96f5e62d83f6f10.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-b502a96f5e62d83f6f10.js js/application-b502a96f5e62d83f6f10.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery' in '/Users/LiseWNoble/RubymineProjects/alpha-blog/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-17
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 2383ms (Views: 2381.6ms | ActiveRecord: 0.0ms | Allocations: 14897)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 09:49:12 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 70)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+Hash: 27bd0a4812bd670e1a44
+Version: webpack 4.31.0
+Time: 901ms
+Built at: 05/27/2019 9:49:15 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-d19d47f6b11d9c6e74c2.js    124 KiB  application  [emitted]  application
+js/application-d19d47f6b11d9c6e74c2.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-d19d47f6b11d9c6e74c2.js js/application-d19d47f6b11d9c6e74c2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 800 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 17)
+Completed 200 OK in 3616ms (Views: 3613.9ms | ActiveRecord: 0.0ms | Allocations: 15392)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 09:49:32 -0400
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.6ms | Allocations: 786)
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.9ms | Allocations: 147)
+Completed 200 OK in 1666ms (Views: 1655.8ms | ActiveRecord: 0.0ms | Allocations: 1674904)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-27 09:52:31 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.3ms | Allocations: 495)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+warning ../../package.json: No license field
+
+
+WARNING: We noticed you're using the `useBuiltIns` option without declaring a core-js version. Currently, we assume version 2.x when no version is passed. Since this default version will likely change in future versions of Babel, we recommend explicitly setting the core-js version you are using via the `corejs` option.
+
+You should also be sure that the version you pass to the `corejs` option matches the version specified in your `package.json`'s `dependencies` section. If it doesn't, you need to run one of the following commands:
+
+  npm install --save core-js@2    npm install --save core-js@3
+  yarn add core-js@2              yarn add core-js@3
+
+Hash: 43450ee03f47244e6e89
+Version: webpack 4.31.0
+Time: 884ms
+Built at: 05/27/2019 9:52:36 AM
+                                     Asset       Size       Chunks             Chunk Names
+    js/application-b725165032fc2d01dfb6.js    124 KiB  application  [emitted]  application
+js/application-b725165032fc2d01dfb6.js.map    139 KiB  application  [emitted]  application
+                             manifest.json  364 bytes               [emitted]  
+Entrypoint application = js/application-b725165032fc2d01dfb6.js js/application-b725165032fc2d01dfb6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 801 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layouts/_navigation.html.erb (Duration: 1.1ms | Allocations: 126)
+  Rendered layouts/_messages.html.erb (Duration: 0.9ms | Allocations: 147)
+Completed 200 OK in 4577ms (Views: 4566.1ms | ActiveRecord: 0.0ms | Allocations: 1676141)
+
+
